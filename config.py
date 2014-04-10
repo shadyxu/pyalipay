@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 # 手机快捷支付服务器异步通知地址
 SECURITY_NOTIFY_URL = ''
@@ -17,9 +17,8 @@ ALIPAY_VERIFY_URL = 'https://mapi.alipay.com/gateway.do?service=notify_verify&'
 # 支付宝合作身份证ID
 PARTNER = ''
 
-
-KEY = ''
 # 支付宝交易安全检验码
+KEY = ''
 
 # 支付宝商户私钥
 PRIVATE_KEY = ""
