@@ -5,6 +5,6 @@ This is a python module for alipay
 
 ### Requirements
 
-`pycrypto`
+pycrypto
 
     pip install pycrypto

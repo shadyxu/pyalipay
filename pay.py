@@ -26,7 +26,7 @@ def build_request(type, *args, **kwargs):
 
 
 def build_trade_para(order_num, amount, desc):
-    req_data = '<direct_trade_create_req><notify_url>%s</notify_url><call_back_url>%s</call_back_url><seller_account_name>%s</seller_account_name><out_trade_no>%s</out_trade_no><subject>%s</subject><total_fee>%s</total_fee></direct_trade_create_req>' % (config.WAP_NOTIFY_URL, ac.WAP_CALL_BACK_URL, ac.EMAIL, order_num, desc, amount)
+    req_data = '<direct_trade_create_req><notify_url>%s</notify_url><call_back_url>%s</call_back_url><seller_account_name>%s</seller_account_name><out_trade_no>%s</out_trade_no><subject>%s</subject><total_fee>%s</total_fee></direct_trade_create_req>' % (config.WAP_NOTIFY_URL, config.WAP_CALL_BACK_URL, config.EMAIL, order_num, desc, amount)
     para = {
             'service':'alipay.wap.trade.create.direct',
             'partner':config.PARTNER,
