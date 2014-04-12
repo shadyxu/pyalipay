@@ -22,7 +22,6 @@ def build_request(type, *args, **kwargs):
     para['sign'] = sign(para)
     para['sec_id'] = config.SIGN_TYPE
     return create_link_string(para, False, False) 
-    #return para
 
 
 def build_trade_para(order_num, amount, desc):

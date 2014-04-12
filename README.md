@@ -1,10 +1,19 @@
 ## PyAlipay
 
-This is a python module for alipay
+支付宝官方只提供了ASP，PHP和JAVA的API，没有Python的，自己轮一个。目前仅支持手机快捷支付和手机网页支付。
+
+忍不住吐槽下，支付宝没有为花了钱的签约商家提供专门的技术协助，只有几个一直叫你按文档来照DEMO做的客服，这点和银联的差距大概有alipay到paypal那么远。一个民企比不过国企，匪夷所思。更坑爹的是，文档和DEMO居然是错的，照着做签名就是不对，google半天才找到正确做法。阿里的同学好自为之吧。
 
 
-### Requirements
+### 依赖 
 
-pycrypto
+pycrypto用于RSA加密、解密，签名、验签
 
     pip install pycrypto
+
+
+### 功能
+
+支付宝手机网页支付
+
+支付宝手机快捷支付由APP发起，服务端只处理交易通知，稍后放出
